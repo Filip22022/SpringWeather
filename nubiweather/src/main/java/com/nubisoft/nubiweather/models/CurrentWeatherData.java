@@ -7,7 +7,7 @@ import lombok.ToString;
 @Setter
 @Getter
 @ToString
-public class Current {
+public class CurrentWeatherData {
     private String last_updated;
     private double temp_c;
     private Condition condition;
