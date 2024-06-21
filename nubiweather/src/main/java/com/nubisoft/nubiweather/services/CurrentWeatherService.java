@@ -18,14 +18,24 @@ public class CurrentWeatherService {
     private String apiKey;
 
 
-    public CurrentWeatherDto getCurrentWeather() throws IOException {
+    public CurrentWeatherDto getCurrentWeather(String city) throws IOException {
+        Response response = callCurrentWeatherApi(city);
+        ObjectMapper objectMapper = new ObjectMapper();
+        if (response.body() == null) {
+            throw new IOException("Response body is empty");
+        }
+        String json = response.body().string();
+        return objectMapper.readValue(json, CurrentWeatherDto.class);
+    }
+
+    private Response callCurrentWeatherApi(String city) throws IOException {
         OkHttpClient client = new OkHttpClient();
 
         HttpUrl.Builder urlBuilder = HttpUrl.parse(
                 "http://api.weatherapi.com/v1/current.json"
         ).newBuilder();
         urlBuilder.addQueryParameter("key", apiKey);
-        urlBuilder.addQueryParameter("q", "Hamburg");
+        urlBuilder.addQueryParameter("q", city);
         urlBuilder.addQueryParameter("aqi", "no");
 
         String url = urlBuilder.build().toString();
@@ -35,9 +45,6 @@ public class CurrentWeatherService {
                 .build();
 
         Response response = client.newCall(request).execute();
-        ObjectMapper objectMapper = new ObjectMapper();
-        String json = response.body().string();
-        CurrentWeatherDto currentWeather = objectMapper.readValue(json, CurrentWeatherDto.class);
-        return currentWeather;
+        return response;
     }
 }
