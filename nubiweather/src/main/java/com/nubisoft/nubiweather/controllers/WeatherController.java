@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.io.IOException;
+import java.util.List;
 
 @Slf4j
 @RestController
@@ -28,10 +29,11 @@ public class WeatherController {
     }
 
     @GetMapping("/realtime-weather")
-    public BasicMessage getCurrentWeather() {
+    public List<CurrentWeatherDto> getCurrentWeather() {
         try {
-            CurrentWeatherDto currentWeather = currentWeatherService.getCurrentWeather();
-            return new BasicMessage(currentWeather.toString());
+            CurrentWeatherDto currentWeatherGliwice = currentWeatherService.getCurrentWeather("Gliwice");
+            CurrentWeatherDto currentWeatherHamburg = currentWeatherService.getCurrentWeather("Hamburg");
+            return List.of(currentWeatherHamburg, currentWeatherGliwice);
         } catch (IOException e) {
             log.error(e.getMessage(), e);
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "WeatherAPI error", e);
@@ -39,10 +41,11 @@ public class WeatherController {
     }
 
     @GetMapping("/forecast-weather")
-    public BasicMessage getFutureWeather() {
+    public List<FutureWeatherDto> getFutureWeather() {
         try {
-            FutureWeatherDto futureWeather = futureWeatherService.getFutureWeather();
-            return new BasicMessage(futureWeather.toString());
+            FutureWeatherDto futureWeatherGliwice = futureWeatherService.getFutureWeather("Gliwice");
+            FutureWeatherDto futureWeatherHamburg = futureWeatherService.getFutureWeather("Hamburg");
+            return List.of(futureWeatherHamburg, futureWeatherGliwice);
         } catch (IOException e) {
             log.error(e.getMessage(), e);
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "WeatherAPI error", e);
