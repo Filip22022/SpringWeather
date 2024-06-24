@@ -1,0 +1,13 @@
+
+u	java:S116"TRename this field "maxtemp_c" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¨Ìäıÿÿÿÿ8¸ıûÓ„2
+p	java:S116"TRename this field "mintemp_c" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ØÜ”€8¸ıûÓ„2
+p	java:S116"TRename this field "avgtemp_c" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Øß¼õ8¸ıûÓ„2
+r	java:S116"VRename this field "maxwind_mph" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ÿİä8¸ıûÓ„2
+w	java:S116"VRename this field "maxwind_kph" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®°«‡ÿÿÿÿÿ8¸ıûÓ„2
+u	java:S116"YRename this field "totalprecip_mm" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ÓÂ8¸ıûÓ„2
+x	java:S116"WRename this field "totalsnow_cm" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç¡øÿÿÿÿ8¸ıûÓ„2
+p	java:S116"TRename this field "avgvis_km" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍŒè¶8¹ıûÓ„2
+~	java:S116"]Rename this field "daily_will_it_rain" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êï¦°ÿÿÿÿÿ8¹ıûÓ„2
+€	java:S116"_Rename this field "daily_chance_of_rain" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å™‹úÿÿÿÿ8¹ıûÓ„2
+~	java:S116"]Rename this field "daily_will_it_snow" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î³ÖÄøÿÿÿÿ8¹ıûÓ„2
+{	java:S116"_Rename this field "daily_chance_of_snow" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åİ‚ö8¹ıûÓ„2

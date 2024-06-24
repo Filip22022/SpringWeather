@@ -1,0 +1,18 @@
+
+r	java:S116"QRename this field "temp_c" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®ä…×ùÿÿÿÿ8˜Ÿê×ƒ2
+r	java:S116"QRename this field "is_day" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Üüàÿÿÿÿÿ8˜Ÿê×ƒ2
+t	java:S116"SRename this field "wind_kph" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†®ùŸûÿÿÿÿ8˜Ÿê×ƒ2
+r	java:S116"VRename this field "wind_degree" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î’»ˆ8˜Ÿê×ƒ2
+t	java:S116"SRename this field "wind_dir" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦Æ­¡ûÿÿÿÿ8˜Ÿê×ƒ2
+p	java:S116"TRename this field "precip_mm" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ ×œ8˜Ÿê×ƒ2
+s	java:S116"RRename this field "snow_cm" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Şëçşÿÿÿÿ8˜Ÿê×ƒ2
+r	java:S116"VRename this field "feelslike_c" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùÂ‹Î8˜Ÿê×ƒ2
+w	java:S116"VRename this field "windchill_c" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê®´Œúÿÿÿÿ8˜Ÿê×ƒ2
+w	java:S116 "VRename this field "heatindex_c" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óİ¤Ûıÿÿÿÿ8˜Ÿê×ƒ2
+v	java:S116!"URename this field "dewpoint_c" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥—ôşÿÿÿÿ8˜Ÿê×ƒ2
+x	java:S116""WRename this field "will_it_rain" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸™“Åøÿÿÿÿ8˜Ÿê×ƒ2
+z	java:S116#"YRename this field "chance_of_rain" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ĞÃÜÿÿÿÿÿ8˜Ÿê×ƒ2
+x	java:S116$"WRename this field "will_it_snow" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¸Ï…üÿÿÿÿ8™Ÿê×ƒ2
+z	java:S116%"YRename this field "chance_of_snow" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£óĞÄşÿÿÿÿ8™Ÿê×ƒ2
+r	java:S116&"QRename this field "vis_km" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á°éøÿÿÿÿ8™Ÿê×ƒ2
+o	java:S116'"SRename this field "gust_kph" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂüıÛ8™Ÿê×ƒ2
