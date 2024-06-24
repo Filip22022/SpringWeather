@@ -1,5 +1,6 @@
 package com.nubisoft.nubiweather.models;
 
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -7,10 +8,17 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
+@Entity
 public class HourWeatherData {
+
+    @Id
+    @GeneratedValue
+    public Long id;
     private String time;
     private double temp_c;
     private int is_day;
+    @OneToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "condition_id", referencedColumnName = "id")
     private Condition condition;
     private double wind_kph;
     private int wind_degree;
@@ -30,6 +38,4 @@ public class HourWeatherData {
     private double vis_km;
     private double gust_kph;
     private double uv;
-    private double short_rad;
-    private double diff_rad;
 }
