@@ -3,6 +3,7 @@ package com.nubisoft.nubiweather.controllers;
 import com.nubisoft.nubiweather.dto.CurrentWeatherDto;
 import com.nubisoft.nubiweather.dto.FutureWeatherDto;
 import com.nubisoft.nubiweather.models.BasicMessage;
+import com.nubisoft.nubiweather.models.ForecastDay;
 import com.nubisoft.nubiweather.services.CurrentWeatherService;
 import com.nubisoft.nubiweather.services.FutureWeatherService;
 import com.nubisoft.nubiweather.services.PastWeatherService;
@@ -57,10 +58,10 @@ public class WeatherController {
     }
 
     @GetMapping("/past-weather/{date}")
-    public List<FutureWeatherDto> getPastWeather(@PathVariable("date") String date) {
+    public List<ForecastDay> getPastWeather(@PathVariable("date") String date) {
         try {
-            FutureWeatherDto pastWeatherGliwice = pastWeatherService.getPastWeather("Gliwice", date);
-            FutureWeatherDto pastWeatherHamburg = pastWeatherService.getPastWeather("Hamburg", date);
+            ForecastDay pastWeatherGliwice = pastWeatherService.getPastWeather("Gliwice", date);
+            ForecastDay pastWeatherHamburg = pastWeatherService.getPastWeather("Hamburg", date);
             return List.of(pastWeatherGliwice, pastWeatherHamburg);
         } catch (IOException e) {
             log.error(e.getMessage(), e);
