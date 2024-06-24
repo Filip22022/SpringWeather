@@ -4,4 +4,4 @@ import com.nubisoft.nubiweather.models.ForecastDay;
 
 import java.util.List;
 
-record ForecastDto(List<ForecastDay> forecastday) {}
+public record ForecastDto(List<ForecastDay> forecastday) {}
